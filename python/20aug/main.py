@@ -1,4 +1,4 @@
-a = ("DM OF VEDIKA")
+a = input("Say something to Vedika: ").strip().lower()
 if a == "hi lol":
     print("Vedika blocked you")
 else:
