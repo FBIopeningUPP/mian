@@ -1,0 +1,1 @@
+print("Official email id:", input("Enter student roll number: ").strip() + "@bennett.edu.in")
