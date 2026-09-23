@@ -1,4 +1,3 @@
-/* Page */
 * {
   box-sizing: border-box;
 }
@@ -13,7 +12,6 @@ h1, h2, h3, p {
   margin: 0 0 8px;
 }
 
-/* Header and navigation */
 header {
   background: #142c43;
   color: white;
@@ -43,7 +41,6 @@ nav a:hover, .active, .banner-button {
   background: #d62b3b;
 }
 
-/* Campus image */
 .banner {
   background: #23435c url("univeristy.jpg") center / cover;
   padding: 40px 6%;
@@ -67,7 +64,6 @@ nav a:hover, .active, .banner-button {
   margin-top: 12px;
 }
 
-/* Form card and columns */
 main {
   width: 94%;
   max-width: 1040px;
@@ -95,7 +91,6 @@ form {
   min-width: 0;
 }
 
-/* Form fields */
 label {
   display: block;
   margin: 14px 0 6px;
@@ -125,7 +120,6 @@ small, .demo-note {
   color: #63758a;
 }
 
-/* Buttons and agreement */
 .form-bottom {
   margin-top: 24px;
   padding-top: 16px;
@@ -155,7 +149,6 @@ button:hover {
   opacity: 0.85;
 }
 
-/* Highlights and footer */
 .highlights {
   display: flex;
   flex-wrap: wrap;
@@ -180,7 +173,6 @@ footer small {
   color: #c1cfdd;
 }
 
-/* Small screens */
 @media (max-width: 700px) {
   header, .columns {
     flex-direction: column;
