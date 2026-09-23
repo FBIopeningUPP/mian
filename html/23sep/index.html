@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bennett University | Admissions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="brand">
+      <span class="logo">🎓</span>
+      <div>
+        <h1>Bennett University</h1>
+        <p>Learn Today, Lead Tomorrow</p>
+      </div>
+    </div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#admission" class="active">Admissions</a>
+      <a href="https://www.bennett.edu.in/">Official Website ↗</a>
+    </nav>
+  </header>
+
+  <section class="banner" id="home">
+    <div class="banner-content">
+      <span class="tag">YOUR FUTURE STARTS HERE</span>
+      <h2>Begin Your Next Chapter</h2>
+      <p>Explore new ideas. Discover your potential.</p>
+      <a href="#admission" class="banner-button">Explore Admissions →</a>
+    </div>
+  </section>
+
+  <main id="admission">
+    <div class="form-heading">
+      <div>
+        <p class="eyebrow">TAKE THE FIRST STEP</p>
+        <h2>Student Admission Form</h2>
+        <p>Enter your details below. Fields marked * are required.</p>
+      </div>
+      <span class="form-icon">🎓</span>
+    </div>
+
+    <form onsubmit="event.preventDefault(); alert('Demo completed. No application was submitted.');">
+
+      <div class="columns">
+        <section>
+          <label for="name">Full Name *</label>
+          <input id="name" name="name" placeholder="Enter your full name" required>
+
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email"
+                 placeholder="you@example.com" required>
+
+          <label for="phone">Mobile Number *</label>
+          <input type="tel" id="phone" name="phone"
+                 placeholder="10-digit mobile number"
+                 pattern="[0-9]{10}" maxlength="10" required>
+
+          <label for="address">Address *</label>
+          <textarea id="address" name="address" rows="3"
+                    placeholder="Enter your complete address" required></textarea>
+
+          <label for="photo">Upload Photograph</label>
+          <input type="file" id="photo" accept="image/jpeg,image/png">
+          <small>Select a JPG or PNG image.</small>
+        </section>
+
+        <section>
+          <label for="dob">Date of Birth *</label>
+          <input type="date" id="dob" name="dob" required>
+
+          <label for="gender">Gender</label>
+          <select id="gender" name="gender">
+            <option value="">Select gender</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+            <option>Prefer not to say</option>
+          </select>
+
+          <label for="course">Course Applied For *</label>
+          <select id="course" name="course" required>
+            <option value="">Select a course</option>
+            <option>B.Tech</option>
+            <option>BBA</option>
+            <option>BCA</option>
+            <option>MBA</option>
+          </select>
+          <small>Example course choices for this project.</small>
+
+          <label for="qualification">Academic Qualification *</label>
+          <select id="qualification" name="qualification" required>
+            <option value="">Select qualification</option>
+            <option>Class 12 — Appearing</option>
+            <option>Class 12 — Completed</option>
+            <option>Graduate</option>
+            <option>Postgraduate</option>
+          </select>
+
+          <label for="information">Additional Information</label>
+          <textarea id="information" name="information" rows="3"
+                    placeholder="Anything else you would like to share"></textarea>
+        </section>
+      </div>
+
+      <div class="form-bottom">
+        <label class="agreement">
+          <input type="checkbox" required>
+          I understand this is a student project demo.
+        </label>
+
+        <div class="buttons">
+          <button type="submit">Submit Demo →</button>
+          <button type="reset">Reset Form</button>
+        </div>
+
+        <p class="demo-note">Use sample details. This form does not send or store your information.</p>
+      </div>
+
+    </form>
+  </main>
+
+  <section class="highlights">
+    <div><span>🎓</span><h3>Learn</h3><p>Build your knowledge</p></div>
+    <div><span>💡</span><h3>Discover</h3><p>Explore new possibilities</p></div>
+    <div><span>🤝</span><h3>Connect</h3><p>Share your ideas</p></div>
+    <div><span>🏆</span><h3>Grow</h3><p>Shape your future</p></div>
+  </section>
+
+  <footer>
+    <p>Bennett University Admission Form</p>
+    <small>Unofficial student project · Educational demonstration</small>
+  </footer>
+
+</body>
+</html>
